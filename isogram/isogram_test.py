@@ -1,49 +1,49 @@
 import unittest
 
-from isogram import leap_year
+from isogram import is_isogram
 
 # Tests adapted from `problem-specifications//canonical-data.json`
 
 
 class IsogramTest(unittest.TestCase):
     def test_empty_string(self):
-        self.assertIs(leap_year(""), True)
+        self.assertIs(is_isogram(""), True)
 
     def test_isogram_with_only_lower_case_characters(self):
-        self.assertIs(leap_year("isogram"), True)
+        self.assertIs(is_isogram("isogram"), True)
 
     def test_word_with_one_duplicated_character(self):
-        self.assertIs(leap_year("eleven"), False)
+        self.assertIs(is_isogram("eleven"), False)
 
     def test_word_with_one_duplicated_character_from_the_end_of_the_alphabet(self):
-        self.assertIs(leap_year("zzyzx"), False)
+        self.assertIs(is_isogram("zzyzx"), False)
 
     def test_longest_reported_english_isogram(self):
-        self.assertIs(leap_year("subdermatoglyphic"), True)
+        self.assertIs(is_isogram("subdermatoglyphic"), True)
 
     def test_word_with_duplicated_character_in_mixed_case(self):
-        self.assertIs(leap_year("Alphabet"), False)
+        self.assertIs(is_isogram("Alphabet"), False)
 
     def test_word_with_duplicated_character_in_mixed_case_lowercase_first(self):
-        self.assertIs(leap_year("alphAbet"), False)
+        self.assertIs(is_isogram("alphAbet"), False)
 
     def test_hypothetical_isogrammic_word_with_hyphen(self):
-        self.assertIs(leap_year("thumbscrew-japingly"), True)
+        self.assertIs(is_isogram("thumbscrew-japingly"), True)
 
     def test_hypothetical_word_with_duplicated_character_following_hyphen(self):
-        self.assertIs(leap_year("thumbscrew-jappingly"), False)
+        self.assertIs(is_isogram("thumbscrew-jappingly"), False)
 
     def test_isogram_with_duplicated_hyphen(self):
-        self.assertIs(leap_year("six-year-old"), True)
+        self.assertIs(is_isogram("six-year-old"), True)
 
     def test_made_up_name_that_is_an_isogram(self):
-        self.assertIs(leap_year("Emily Jung Schwartzkopf"), True)
+        self.assertIs(is_isogram("Emily Jung Schwartzkopf"), True)
 
     def test_duplicated_character_in_the_middle(self):
-        self.assertIs(leap_year("accentor"), False)
+        self.assertIs(is_isogram("accentor"), False)
 
     def test_same_first_and_last_characters(self):
-        self.assertIs(leap_year("angola"), False)
+        self.assertIs(is_isogram("angola"), False)
 
 
 if __name__ == "__main__":
