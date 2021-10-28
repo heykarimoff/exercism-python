@@ -1,6 +1,6 @@
 def is_isogram(string):
     # empty string is isogram
-    if string is "":
+    if string == "":
         return True
     
     # clear hyphenated strings
