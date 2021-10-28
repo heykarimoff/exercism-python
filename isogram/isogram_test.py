@@ -1,8 +1,6 @@
 import unittest
 
-from isogram import (
-    is_isogram,
-)
+from isogram import is_isogram
 
 # Tests adapted from `problem-specifications//canonical-data.json`
 
