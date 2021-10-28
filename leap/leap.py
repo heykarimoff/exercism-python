@@ -1,5 +1,3 @@
-
-
 def is_leap_year(year):
     """
     Given 4-digit year, return True if it is leap year othervise False.
@@ -10,4 +8,4 @@ def is_leap_year(year):
     if (year % 400) != 0 and (year % 100) == 0: # century but not divisible by 400
             return False
     
-    return True  
+    return True
