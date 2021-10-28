@@ -1,5 +1,10 @@
 # Rna Transcription
 
+Welcome to Rna Transcription on Exercism's Python Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
 Given a DNA strand, return its RNA complement (per RNA transcription).
 
 Both DNA and RNA strands are a sequence of nucleotides.
@@ -18,19 +23,32 @@ each nucleotide with its complement:
 * `T` -> `A`
 * `A` -> `U`
 
-### Submitting Exercises
-
-Note that, when trying to submit an exercise, make sure the solution is in the `exercism/python/<exerciseName>` directory.
-
-For example, if you're submitting `bob.py` for the Bob exercise, the submit command would be something like `exercism submit <path_to_exercism_dir>/python/bob/bob.py`.
-
-
-For more detailed information about running tests, code style and linting,
-please see the [help page](http://exercism.io/languages/python).
-
 ## Source
 
-Rosalind [http://rosalind.info/problems/rna](http://rosalind.info/problems/rna)
+### Created by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+- @BrianHicks
+
+### Contributed to by
+
+- @behrtam
+- @cmccandless
+- @davepeake
+- @Dog
+- @dvermd
+- @hariesramdhani
+- @ikhadykin
+- @jamesmcm
+- @kytrinyx
+- @lowks
+- @magnus-hogberg
+- @N-Parsons
+- @pheanex
+- @sjakobi
+- @thomasjpfan
+- @tqa236
+- @yawpitch
+
+### Based on
+
+Hyperphysics - http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html
