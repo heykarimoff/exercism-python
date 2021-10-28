@@ -1,4 +1,4 @@
-def is_leap_year(year):
+def leap_year(year):
     """
     Given 4-digit year, return True if it is leap year othervise False.
     """
